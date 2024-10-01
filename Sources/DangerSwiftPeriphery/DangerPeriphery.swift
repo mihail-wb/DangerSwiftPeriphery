@@ -88,7 +88,7 @@ public enum DangerPeriphery {
         let commandBuilder = PeripheryScanCommandBuilder(peripheryExecutable: peripheryExecutable,
                                                          additionalArguments: arguments)
         let scanExecutor = PeripheryScanExecutor(commandBuilder: commandBuilder)
-        let danger = Danger()
+        let danger = DangerCreate()
         let currentPathProvider = CurrentPathProvider()
         let outputParser = CheckstyleOutputParser(projectRootPath: currentPathProvider.currentPath)
 
