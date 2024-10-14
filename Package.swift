@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let isDevelop = true
+let isDevelop = false
 
 let developProducts: [Product] = isDevelop ? [
     .library(
@@ -32,7 +32,7 @@ let package = Package(
             targets: ["DangerSwiftPeriphery"]),
     ] + developProducts,
     dependencies: [
-        .package(url: "https://github.com/danger/swift.git", from: "3.0.0"),
+        .package(url: "https://github.com/abhi-m-simformsolutons/swift", branch: "fix_swift6-module-path"),
         .package(url: "https://github.com/taji-taji/swift-shell.git", from: "1.0.0"),
         .package(url: "https://github.com/peripheryapp/periphery", from: "2.0.0"),
     ],
